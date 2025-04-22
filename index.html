@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heart-background"></div>
+  <div class="container">
+    <h1 id="title">Some Memories Before I Say Something...</h1>
+    <div id="imageContainer">
+      <img id="memoryImage" src="images/img1.jpg" alt="Memory 1" onclick="showNextImage()" />
+      <p class="click-hint">Click to see the next moment 💫</p>
+    </div>
+    <div id="proposalSection" style="display: none;">
+      <div id="shayari" class="typewriter-text"></div>
+      <div class="button-group">
+        <button class="btn yes" onclick="handleResponse('yes')">Yes ❤️</button>
+        <button class="btn no" onclick="handleResponse('no')">No 💔</button>
+        <button class="btn maybe" onclick="handleResponse('maybe')">I will think about it 🤔</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="/music.mp3" type="audio"/>
+  </audio>
+<!-- <embed src="/music.mp3" autostart></embed> -->
+  <script src="script.js"></script>
+</body>
+</html>
